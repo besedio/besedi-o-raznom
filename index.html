@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+<title>Беседы о разном</title>
+<meta name="description" content="Все ссылки и способы поддержать проект «Беседы о разном»">
+<style>
+:root{--bg:#011422;--section:#0c1c2e;--link:#14365c;--link-h:#1c477a;--text:#fff;--accent:#ff6b8a;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:480px;margin:0 auto;padding:32px 16px 48px;display:flex;flex-direction:column;align-items:center}
+.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.15);margin-bottom:20px}
+h1{font-size:clamp(1.25rem,4vw,1.5rem);text-transform:uppercase;letter-spacing:.03em;font-weight:700;text-align:center;margin-bottom:10px}
+.bio{font-size:.9rem;line-height:1.5;text-align:center;color:rgba(255,255,255,.85);max-width:340px;margin-bottom:28px}
+.section-title{font-size:1.15rem;font-weight:700;color:var(--accent);text-align:center;margin:8px 0 14px;width:100%}
+.link{width:100%;display:block;background:var(--link);color:var(--text);text-decoration:none;text-transform:uppercase;font-weight:700;letter-spacing:.02em;text-align:center;padding:16px 20px;border-radius:var(--r);margin-bottom:12px}
+.link:active{background:var(--link-h)}
+.link small{display:block;font-size:.72rem;font-weight:400;text-transform:none;letter-spacing:normal;color:rgba(255,255,255,.75);margin-top:4px}
+.msg{width:100%;display:flex;align-items:center;gap:12px;background:var(--link);color:var(--text);text-decoration:none;padding:14px 18px;border-radius:var(--r);margin-bottom:12px}
+.msg:active{background:var(--link-h)}
+.msg svg{width:28px;height:28px;flex-shrink:0;fill:#29b6f6}
+.msg span{font-size:.9rem;font-weight:500;text-align:left}
+.card{width:100%;background:var(--section);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.card img{width:72px;height:72px;border-radius:8px;object-fit:cover;flex-shrink:0;background:#fff}
+.card .label{font-weight:700;color:var(--accent);display:block;margin-bottom:4px;font-size:.85rem}
+.card .value{word-break:break-all;font-family:Menlo,Consolas,monospace;font-size:.78rem;color:rgba(255,255,255,.85);cursor:pointer}
+footer{margin-top:32px;font-size:.72rem;color:rgba(255,255,255,.35);text-align:center}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--link);color:#fff;padding:10px 18px;border-radius:999px;font-size:.82rem;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:100}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<div class="page">
+<img class="avatar" src="assets/avatar.jpg" alt="Константин К" width="112" height="112">
+<h1>Константин К</h1>
+<p class="bio">Подкастер, политолог, финансовый аналитик, микрознаменитость, наноинфлюэнсер, нишевая микроселебрити, инсектоид, подлец, публицист, неофилософ, пират карибского моря</p>
+
+<div class="section-title">Донаты</div>
+
+<a class="link" href="https://www.donationalerts.com/r/konstantin_kadavr" target="_blank" rel="noopener">Задонатить<small>через DonationAlerts</small></a>
+<a class="link" href="https://web.tribute.tg/l/aj" target="_blank" rel="noopener">Задонатить<small>через Telegram (если не работают рос.карты)</small></a>
+<a class="link" href="https://boosty.to/kadavr" target="_blank" rel="noopener">Boosty<small>Спонсорство и донаты с ИНОСТРАННЫХ КАРТ</small></a>
+
+<div class="card">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=TRU9VGnEdJoJv6xhGE7jFfnN7EiKkHykAD" alt="USDT QR" width="72" height="72">
+<div><span class="label">USDT по курсу 130 (TRC-20)</span><span class="value" onclick="copyText(this.innerText)">TRU9VGnEdJoJv6xhGE7jFfnN7EiKkHykAD</span></div>
+</div>
+
+<div class="section-title">Telegram</div>
+
+<a class="msg" href="https://t.me/kadavrtemabot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 2 2 10.5l6.5 2.3L11 20l3-4.5 5.5 3L22 2Zm-3 3-9.2 8.4-.4 4.2-2-5.6L18 5l-9.3 6.2"/></svg><span>Бот чтобы послать повестку</span></a>
+<a class="msg" href="https://t.me/notificationkk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 2 2 10.5l6.5 2.3L11 20l3-4.5 5.5 3L22 2Zm-3 3-9.2 8.4-.4 4.2-2-5.6L18 5l-9.3 6.2"/></svg><span>Telegram-Оповещения о стримах и видео</span></a>
+
+<footer>Беседы о разном</footer>
+</div>
+<div class="toast" id="toast">Скопировано</div>
+<script>
+function copyText(t){navigator.clipboard.writeText(t).then(()=>{var el=document.getElementById('toast');el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1400)})}
+</script>
+</body>
+</html>
